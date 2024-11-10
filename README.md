@@ -1,6 +1,6 @@
 # Software-Development
 My task was to complete 3 diffrent labs by the 15th of novemebr 2024. The labs i have completed are 1,2,5,6.
-# code realiablity and maintanibility
+# code readablity and maintanibility
 readability: readability in codes means how easily can a human reader can understand and comprehend the code. High readability in a codebase is crucial for many reasons:
 Easier maintenance: code that is easy to read and understand can be maintained more efficiently. developer can quickly identify and fix bugs add new features and refactor the code without a steep learning curve.
 collaboration: readable code enhances collaboration among team members. when multiple developers work on the same project clear and concise code will ensure everyone can understand each other’s contributions leading to smoother teamwork. 
