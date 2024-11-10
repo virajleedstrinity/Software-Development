@@ -8,4 +8,10 @@ Automated testing: The creation of testing and intergartion testing will help en
 code reviews: by having regluar reviews on your code it will help to detect any portential issues and where inprovement can be made to the qaulity of the code to improve the standerd of the code. This will help to catch any error that could have been over looked. 
 version control: Using software like Git Hub will help track changes and to go back to previous versions if any inssues appear. I have used Git hub to work on the labs as it allows me to keep my work in once place and to also keep my update versions store safely. 
 documentation: By having a clear documentation will help explain the software its design and that it is intended uses is.By having a well documented code it will be much simplier to debug and to extend and maintain. 
+code maintainablity: manitaniablity goes bact to the ease in which the code can be modified ,enhanched,corrected. maintaniable code is inportant for the long term sucess of the software as this allows it for quick adaptationas and changing requirment and the ease of interagration of new key features. the keay parts for maintaining maintaniable code is:
+modular design:
+code readablity:
+refactoring:
+dependancy management:
+continuous intergartion and deployment:
 #guessing game
