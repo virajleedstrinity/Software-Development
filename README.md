@@ -1,17 +1,19 @@
 # Software-Development
-my task was to complete 3 diffrent labs by the 15th of novemebr 2024. the labs i have completed are 1,2,5,6.
+My task was to complete 3 diffrent labs by the 15th of novemebr 2024. The labs i have completed are 1,2,5,6.
 # code realiablity and maintanibility
-code reliablity and maintaniablity are very inportant when it comes to software devlopment as this will ensure the long life, performance and ease of changes in a software systems. both play a inportant role as they contribute significantly to the end quality of the software. 
-code reliablity: This refers to if the software can function correctly and always under fo specified conditions without any failiure. The role for reliable code is to apply its intended functions correctly so that it can handele errores gracefully to ensure that it has robust user experiances achieving. To do this it involves serveal preactices:
-robust error handling: Having reobust earror handling and testing will help the software deal with any unexpected input without crashing. this includes functions like try and except you can find this in python or anythoer software langauges. I have used the try and except function in my lab 5 sudoku. 
-Automated testing: The creation of testing and intergartion testing will help ensure that individual componets of the system itself to functiomn correctly.Automated testing will allows developer to dectect and fix any bugs in the early stage of development process.
-code reviews: by having regluar reviews on your code it will help to detect any portential issues and where inprovement can be made to the qaulity of the code to improve the standerd of the code. This will help to catch any error that could have been over looked. 
-version control: Using software like Git Hub will help track changes and to go back to previous versions if any inssues appear. I have used Git hub to work on the labs as it allows me to keep my work in once place and to also keep my update versions store safely. 
-documentation: By having a clear documentation will help explain the software its design and that it is intended uses is.By having a well documented code it will be much simplier to debug and to extend and maintain. 
-code maintainablity: manitaniablity goes bact to the ease in which the code can be modified ,enhanched,corrected. maintaniable code is inportant for the long term sucess of the software as this allows it for quick adaptationas and changing requirment and the ease of interagration of new key features. the keay parts for maintaining maintaniable code is:
-modular design:
-code readablity:
-refactoring:
-dependancy management:
-continuous intergartion and deployment:
+Code reliability and maintainability are very important when it comes to software development as this will ensure the long life, performance and ease of changes in a software systems. both play a important role as they contribute significantly to the end quality of the software. 
+code reliability: This refers to if the software can function correctly and always under for specified conditions without any failure. The role for reliable code is to apply its intended functions correctly so that it can handle errors gracefully to ensure that it has robust user experience achieving. To do this it involves several practices:
+robust error handling: Having robust error handling and testing will help the software deal with any unexpected input without crashing. this includes functions like try and except you can find this in python or another software languages. I have used the try and except function in my lab 5 sudoku. 
+Automated testing: The creation of testing and integration testing will help ensure that individual components of the system itself to function correctly. Automated testing will allows developer to detect and fix any bugs in the early stage of development process.
+code reviews: by having regular reviews on your code it will help to detect any potential issues and where improvement can be made to the quality of the code to improve the standard of the code. This will help to catch any error that could have been over looked. 
+version control: Using software like Git Hub will help track changes and to go back to previous versions if any issues appear. I have used Git hub to work on the labs as it allows me to keep my work in once place and to also keep my update versions store safely. 
+documentation: By having a clear documentation will help explain the software its design and that it is intended uses is. By having a well-documented code it will be much simpler to debug and to extend and maintain. 
+code maintainability: maintainability goes back to the ease in which the code can be modified ,enhanced ,corrected. maintainable code is important for the long term success of the software as this allows it for quick adaptations and changing requirements and the ease of integration of new key features. the key parts for maintaining maintainable code is:
+modular design: By breaking down the code into smaller more reusable and self-contained modules or functions it would make it easier to understand and test it would also be easy to modify. 
+code readability writing clean readable code with meaningful variable names and having a consistent formatting in place would help. by adding comment to your code it would help to understand what that function does. in all my labs i have include comments so that users can understand what each function does it also helps user who have never seen a programming language.  
+refactoring: By refactoring code on a regular basis will help to improve the structure without changing external behaviour this will help to eliminate technical debt and to main the codebase health. refactoring improves code efficiency and readability and ease of maintenance. 
+dependency management: The correct control of dependency guarantees that the software can be upgraded or modified without triggering conflicts or breaking changes. use dependency management tools and keep dependencies up to date to ensure maintainability.
+continuous integration and deployment’s CI/CD pipelines automate building testing and deployment procedures this is a method to help identify issues early. it ensures that updates are adequately tested and decreases the chance of introducing defects into the production environment.
+
 #guessing game
+
