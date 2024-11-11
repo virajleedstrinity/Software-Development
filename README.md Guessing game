@@ -1,1 +1,4 @@
-#guessing game
+#Guessing Game
+How the my guessing gmae works is that the user will input a number it will then check the number the user has inputed and the tell the user if the number they have entered is
+to high or too low. The user will then be able to guess 4 more times before they get told actual number. if the user does guess the number correctly they will recive a message
+saying well done you have  guessed the number correctly. 
