@@ -1,4 +1,5 @@
 #Guessing Game
 How the my guessing gmae works is that the user will input a number it will then check the number the user has inputed and the tell the user if the number they have entered is
-to high or too low. The user will then be able to guess 4 more times before they get told actual number. if the user does guess the number correctly they will recive a message
-saying well done you have  guessed the number correctly. 
+to high or too low. The user will then be able to guess 8 more times before they get told actual number. if the user does guess the number correctly they will recive a message
+saying well done you have  guessed the number correctly. The user will then be able to play a total of 3 round of the game where they can enter a number to check  
+if the number is larger or less then what i am think of at the end of the rounds it will add up your score and display it. To start the game you press the run function. 
