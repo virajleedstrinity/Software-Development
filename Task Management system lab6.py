@@ -1,102 +1,105 @@
-#i have created a variable called Task_During_day and Task_during_Month
-Tasks_During_Day = {day: [] for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]}
-Tasks_During_Month = {month: [] for month in ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October","November","December"]}
+from idlelib.autocomplete import FORCE
 
+from colorama import init, Fore, Back, Style
+init()
+#i have created a variable called Task_During_day and Task_during_Month
+Tasks_During_Day = {day: [] for day in ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]}
+Tasks_During_Month = {month: [] for month in ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER","NOVEMBER","DECEMBER"]}
 # I am defining a function called Adding_Task
 def Adding_Task():
-    period = input("Do You Want To Add A Task To A 'Day' Or A 'Month'? ").capitalize()
+    period = input(Style.RESET_ALL +"Do You Want To Add A Task To A 'Day' Or A 'Month'? ").upper()
     # If statement is checking if the statement is true
-    if period == 'Day':
-        day = input("Please Enter The Day Of The Week: ")
-        task = input("Please Enter The Task: ")
+    if period =='DAY':
+        day = input("Please Enter The Day Of The Week: ").upper()
+        task = input("Please Enter The Task: ").upper()
         # If statement is checking if the statement is true
         if day in Tasks_During_Day:
             Tasks_During_Day[day].append(task)
-            print(f"Task Has Been added to {day}.")
+            print(Fore.GREEN + f"Has Been added to\n {day}.")
             #Else function is used to say if the condition is not true then do this
         else:
-            print("Invalid Day Of The Week.")
+            print(Fore.RED + "Invalid Day Of The Week.")
             # The Elif statement  is used to check more that one conditions at the same time
-    elif period == 'Month':
-        month = input("Please Enter The Month: ")
-        task = input("Please Enter The Task: ")
+    elif period == 'MONTH':
+        month = input(Style.RESET_ALL + "Please Enter The Month: ").upper()
+        task = input("Please Enter The Task: ").upper()
         # If statement is checking if the statement is true
         if month in Tasks_During_Month:
             Tasks_During_Month[month].append(task)
-            print(f"Task Has Been Added To {month}.")
+            print(Fore.GREEN + f"Task Has Been Added To {month}.")
             # Else function is used to say if the condition is not true then do this
         else:
-            print("Invalid Month.")
+            print(Fore.RED + "Invalid Month.\n")
             # Else function is used to say if the condition is not true then do this
     else:
-        print("Invalid choice. Please Choose 'Day' Or 'Month'.")
+        print(Fore.RED + "Invalid choice. Please Choose 'Day' Or 'Month'.")
 
 #def is used to define the function seeing_task
 def Seeing_Tasks():
-    period = input("Do You Want To View Tasks For A 'Day' Or A 'Month'? ")
+    period = input("Do You Want To View Tasks For A 'Day' Or A 'Month'? ").upper()
     # If statement is checking if the statement is true
-    if period == 'day':
-        day = input("Please Enter The Day Of The Week: ")
+    if period == 'DAY':
+        day = input("Please Enter The Day Of The Week: ").upper()
         # If statement is checking if the statement is true
         if day in Tasks_During_Day:
             print(f"Tasks For {day}: {Tasks_During_Day[day]}")
             # Else function is used to say if the condition is not true then do this
         else:
-            print("Invalid Day Of The Week.")
-    elif period == 'Month':
-        month = input("Please Enter The Month: ")
+            print(Fore.RED + "Invalid Day Of The Week.")
+    elif period == 'MONTH':
+        month = input(Style.RESET_ALL + "Please Enter The Month: ").upper()
         # If statement is checking if the statement is true
         if month in Tasks_During_Month:
             print(f"Tasks For {month}: {Tasks_During_Month[month]}")
             # Else function is used to say if the condition is not true then do this
         else:
-            print("Invalid Month.")
+            print(Fore.RED + "Invalid Month.")
             # Else function is used to say if the condition is not true then do this
     else:
-        print("Invalid Choice. Please Choose 'Day' Or 'Month'.")
+        print(Fore.RED + "Invalid Choice. Please Choose 'Day' Or 'Month'.")
 
 #def is used to define the function Remove_task
 def Remove_Task():
-    period = input("Are You Sure You Want To Delete A Task From A 'Day' Or A 'Month'? ")
+    period = input(Style.RESET_ALL + "Are You Sure You Want To Delete A Task From A 'Day' Or A 'Month'? ").upper()
     # If statement is checking if the statement is true
-    if period == 'day':
-        day = input("Please Enter The Day Of The Week: ")
+    if period == 'DAY':
+        day = input("Please Enter The Day Of The Week: ").upper()
         # If statement is checking if the statement is true
         if day in Tasks_During_Day:
-            task = input("Please Enter The Task To Delete: ")
+            task = input("Please Enter The Task To Delete: ").upper()
             # If statement is checking if the statement is true
             if task in Tasks_During_Day[day]:
                 Tasks_During_Day[day].remove(task)
-                print(f"Task Has Been Removed From {day}.")
+                print(Fore.GREEN + f"Task Has Been Removed From {day}.")
                 # Else function is used to say if the condition is not true then do this
             else:
-                print("Task Has Not Been Found.")
+                print(Fore.RED + "Task Has Not Been Found.")
                 # Else function is used to say if the condition is not true then do this
         else:
-            print("Invalid Day Of the Week.")
+            print(Fore.RED + "Invalid Day Of the Week.")
             # The Elif statement  is used to check more that one conditions at the same time
-    elif period == 'Month':
-        month = input("Enter The Month: ")
+    elif period == 'MONTH':
+        month = input(Style.RESET_ALL + "Enter The Month: ").upper()
         # If statement is checking if the statement is true
         if month in Tasks_During_Month:
             task = input("Enter The Task To Delete: ")
             # If statement is checking if the statement is true
             if task in Tasks_During_Month[month]:
                 Tasks_During_Month[month].remove(task)
-                print(f"Task Has Been Removed from {month}.")
+                print(Fore.GREEN + f"Task Has Been Removed from {month}.")
                 # Else function is used to say if the condition is not true then do this
             else:
-                print("Task Has Not Been Fund.")
+                print(Fore.RED + "Task Has Not Been Found.")
                 # Else function is used to say if the condition is not true then do this
         else:
-            print("Invalid month.")
+            print(Fore.RED + "Invalid month.")
             # Else function is used to say if the condition is not true then do this
     else:
-        print("Invalid choice. Please Choose 'Day' or 'Month'.")
+        print(Fore.RED + "Invalid choice. Please Choose 'Day' or 'Month'.")
 
 # While true is a forever loop until condition is not meat
 while True:
-    print("\nPlease Select An Option From The Task Management System Menu")
+    print(Style.RESET_ALL + "Please Select An Option From The Task Management System Menu\n")
     print("1: Add a Task")
     print("2: View Tasks")
     print("3: Delete a Task")
