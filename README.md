@@ -1,3 +1,5 @@
+# GitHub Repository
+https://github.com/virajleedstrinity/Software-Development.git
 # Software-Development
 My task was to complete 3 diffrent labs by the 15th of novemebr 2024. The labs i have completed are 1,2,5,6.
 # Code Readablity 
