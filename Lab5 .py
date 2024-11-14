@@ -45,8 +45,8 @@ while True:
     if n == ans[r][c] and grid[r][c] == 0:
         grid[r][c] = n
     else:
-        print("\033[31m`Error: Invalid entry\n.")
-        print("\255` \n")
+        print("Error: Invalid entry\n.")
+
 
     # Board completion check
     if grid == ans:

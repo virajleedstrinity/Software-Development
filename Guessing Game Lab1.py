@@ -11,7 +11,7 @@ while True:
     if guess<=100:
         # if function will run the program in the conditions has been met
         if guess < randomNum:
-            print("\033[42m`That was too low.\n")
+            print("\033[42m`That was too low!\n")
             # elif function allows to check multiple conditions
         elif guess > randomNum:
             print("\033[42m`That was too high!\n")
@@ -21,7 +21,7 @@ while True:
             break
             #The print function is print a string
     else:
-        print("number out if range")
+        print("The number is out of range")
         continue
 
 print("\033[42m`well done you guessed correctly\n")
